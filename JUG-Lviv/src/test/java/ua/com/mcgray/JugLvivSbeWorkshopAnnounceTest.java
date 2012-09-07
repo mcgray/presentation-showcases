@@ -27,9 +27,7 @@ public class JugLvivSbeWorkshopAnnounceTest {
     }
 
     public boolean postTitleContains(String titleText) {
-        System.out.println(announcePage.getPostTitle());
-        System.out.println(titleText);
-        return announcePage.getPostTitle().equals(titleText);
+        return announcePage.getPostTitle().contains(titleText);
     }
 
     public boolean presentInPostCommenters(String commenter) {

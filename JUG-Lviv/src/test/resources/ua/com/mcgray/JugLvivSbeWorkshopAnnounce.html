@@ -1,4 +1,4 @@
-<html xmlns:concordion="http://www.concordion.org/2007/concordion" encoding="UTF-8">
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
 <head>
     <link href="../../../concordion.css" rel="stylesheet" type="text/css" />
 </head>
@@ -13,7 +13,8 @@
     <p></p>
 
     <h3>Then:</h3>
-    <p>Post title contains <b concordion:assertTrue = "postTitleContains(#TEXT)">Workshop &#8216;Spring by Example&#8217;</b></p>
+    <p>Post title contains <b concordion:assertTrue = "postTitleContains(#TEXT)">Workshop</b></p>
+    <p>Post title contains <b concordion:assertTrue = "postTitleContains(#TEXT)">Spring by Example</b></p>
     <p>Post has comments by <b concordion:assertTrue = "presentInPostCommenters(#TEXT)">Oleksiy Rezchykov</b></p>
     <p>Post has comments with <b concordion:assertTrue = "presentInComments(#TEXT)">we closed the registration</b> text in it</p>
 

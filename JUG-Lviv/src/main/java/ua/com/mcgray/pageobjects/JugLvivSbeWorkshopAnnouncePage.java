@@ -29,10 +29,9 @@ public class JugLvivSbeWorkshopAnnouncePage {
     private WebElement postTitle;
 
 
-
     public JugLvivSbeWorkshopAnnouncePage(WebDriver webDriver) {
         this.webDriver = webDriver;
-        this.webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        this.webDriver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     public void open() {
@@ -40,7 +39,7 @@ public class JugLvivSbeWorkshopAnnouncePage {
     }
 
     public String getPostTitle() {
-         return postTitle.getText().trim();
+        return postTitle.getText();
     }
 
     public List<String> getCommentAuthors() {
